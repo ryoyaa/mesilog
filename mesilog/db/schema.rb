@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171206165835) do
+ActiveRecord::Schema.define(version: 20171208153639) do
 
   create_table "menus", force: :cascade do |t|
     t.integer "user_id"
@@ -18,11 +18,12 @@ ActiveRecord::Schema.define(version: 20171206165835) do
     t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "description"
   end
 
   create_table "reviews", force: :cascade do |t|
     t.integer "user_id"
-    t.text "comment_body"
+    t.text "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -42,6 +43,7 @@ ActiveRecord::Schema.define(version: 20171206165835) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "password_digest"
+    t.integer "role"
   end
 
 end
