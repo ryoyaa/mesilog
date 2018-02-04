@@ -1,0 +1,32 @@
+<div class="users-new-wrapper">
+  <div class="container">
+    <div class="card card-container">
+      <img  class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+      <div class="row">
+    <!--  <div class="col-md-offset-4 col-md-4 users-new-container">-->
+        <h1 class="text-center text-black">会員登録</h1>
+        <%= form_for @shop_user, url: shop_users_path do |f| %>
+          <div class="form-group">
+            <%= f.label :name, class: 'text-black' %>
+            <%= f.text_field :name, class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= f.label :email, class: 'text-black' %>
+            <%= f.text_field :email, class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= f.label :password, class: 'text-black' %>
+            <%= f.password_field :password, class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= f.label :password_confirmation, class: 'text-black' %>
+            <%= f.password_field :password_confirmation, class: 'form-control' %>
+          </div>
+
+          <%= f.submit "登録", class: 'btn square_btn' %>
+        <% end %>
+        <%= link_to '既に登録済みの方はこちら', 'shop_user_sessions/new',class: 'text-black' %>
+      </div>
+    </div>
+  </div>
+</div>

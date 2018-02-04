@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meshilog</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  　　<header>
+      <div class="title-wrapper">
+        <div class="container">
+          <div class="row">
+           <div class="col-md-offset-4 col-md-8">
+            <div class="header-title-area">
+              <h1 class="text-gray">グルメアプリ</h1>
+              <h2 class="text-gray">あなたのおすすめ紹介しませんか？</h2>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </header>
+      <div class="row">
+        <div class="col-md-offset-4 col-md-8">
+          <ul class="header-navigation">
+            <li><a href="/">top</a></li>
+            <% if current_user  %>
+            <li><a href="/shops">shop一覧</a></li>
+
+            <li><%= link_to "Logout", :logout, method: :delete %></li>
+            <li><%= link_to "ShopRegiser" , shops_new_path %></li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+  </head>
+
+  <body>
+  <!--  <nav class="navbar navbar-default navbar-fixed-bottom navbar-transparent">
+      <div class="container">
+        <%= link_to root_path do %>
+          <span><%= image_tag '', class: 'navbar-brand' %></span>
+        <% end %>
+        <ul class="nav navbar-nav navbar-right">
+          <% if current_user  %>
+          <%= link_to "Edit Profile", edit_user_path(current_user.id) %>
+          <%= link_to "Logout", :logout, method: :post %>
+          <% else %>
+          <%= link_to "Register", new_user_path %> |
+          <%= link_to "Login", :login %>
+
+              <% end %>
+        </ul>
+      </div>
+    </nav>-->
+<% if flash[:notice] %>
+  <div class="alert alert-success">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
+<% if flash[:alert] %>
+  <div class="alert alert-danger">
+    <%= flash[:alert] %>
+  </div>
+<% end %>
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<div class="topic-new-wrapper" >
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h1 class="text-center">Add review</h1>
+        <%= form_for @review  do |f| %>
+          <div class="form-group">
+            <%= f.label :review %>
+            <%= f.text_area :content, class: 'form-control' %>
+            <%= f.hidden_field :shop_id, value: params[:shop_id] %>
+          </div>
+
+          <%= f.submit '送信', class: 'btn btn-black btn-block' %>
+
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

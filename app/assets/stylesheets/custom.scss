@@ -1,0 +1,330 @@
+h1, h2 {
+  font-weight: 100;
+}
+
+.main {
+  color: #ffffff;
+  background: image-url('home-image2.jpeg');
+  background-size: cover;
+  height: 150px;
+  margin: 20px;
+}
+.text-gray{
+  color: #696969
+}
+.text-white {
+  color: #ffffff;
+}
+.text-black{
+  color: #000000
+}
+
+.square_btn{
+  display: inline-block;
+   padding: 0.5em 1em;
+   text-decoration: none;
+   background: #668ad8;/*ボタン色*/
+   color: #FFF;
+   border-bottom: solid 4px #627295;
+   border-radius: 3px;
+}
+.square_btn:active {/*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}
+
+
+/*.btn-red {
+  color: #ff6347;
+  border: 1px solid #696969;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  background-color: rgba(0,0,0,0.0);
+
+  &:hover{
+    color: #000000;
+  }
+}
+*/
+.card-container.card {
+    max-width: 350px;
+    padding: 40px 40px;
+}
+
+.btn {
+    font-weight: 700;
+    height: 36px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+.card {
+    background-color: #F7F7F7;
+    /* just in case there no content*/
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img-card {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+
+
+
+
+.top-hero-wrapper {
+  width: 100vw;
+  height: 100vh;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #fff;
+}
+
+.top-hero-container {
+  padding-top: 50px;
+  h1{
+    font-size: 56px;
+    margin-bottom: 60px;
+  }
+}
+
+form-control {
+  height: 45px;
+}
+
+.users-new-wrapper {
+  width: 100vw;
+  height: 100vh;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #ffffff;
+
+  .users-new-container {
+      padding-top: 220px;
+    .form-group {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.alert {
+  margin-bottom: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}
+.header-navigation {
+  margin: 0 auto 0 auto;
+  width: 100% ;
+  background-color: #fff;
+  padding: 20px 0;
+}
+
+.header-navigation:after {
+  clear: both;
+  display: block;
+  content: " ";
+}
+
+.header-navigation li {
+  float: left;
+  padding: 0 30px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.header-navigation li a {
+  color: #333;
+  text-decoration: none;
+}
+
+
+/*
+.header-navigation  {
+  margin-bottom: 0px;
+  background-color: rgba(0,0,0,0.5);
+  a {
+    color: #fff !important;
+  }
+
+  .navbar-brand {
+    padding: 0px;
+    margin-top: 15px;
+  }
+
+  img {
+    height: 40px;
+  }
+}
+
+/*.btn-black {
+  color: #565656;
+  border: 1px solid #565656;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  background-color: rgba(0,0,0,0.0);
+
+  &:hover {
+    color: #565656;
+  }
+}*/
+
+.topic-new-wrapper {
+  padding-top: 120px;
+}
+
+.topic-index-wrapper {
+  padding-top: 70px;
+  background-color: #fafafa;
+  .topic-index-single {
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border: 1px solid #e6ecf0;
+    border-radius: 3px;
+    .topic-author {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    .topic-text {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    img {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    .topic-index-icon {
+      width: 35px;
+      height: 30px;
+      margin-left: 20px;
+    }
+  }
+}
+.shop-index-container {
+  width: 920px;
+  margin: 20px auto 40px auto;
+
+}
+
+
+.shop {
+  float:left;
+  margin: 20px;
+  width: 300px;
+  height: 400px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+
+  .shop-img {
+    height: 200px;
+    margin: 0 auto 0 auto;
+    border-radius: 5px 5px 0 0;
+    max-width: 100%;
+
+
+  }
+
+  .shop-phot {
+    height: 200px;
+    width: 100% ;
+    margin: 0 auto 0 auto;
+  }
+
+
+  .card {
+    overflow: scroll;
+    height: 200px;
+    font-size: 10px;
+    margin: 0 auto 0 auto;
+
+      .card-title {
+      font-size: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+     }
+     .card-text {
+      color: #777;
+      font-size: 14px;
+      line-height: 1.5;
+     }
+
+  }
+}
+
+.menu {
+  list-style-type: none;
+  width: 100%;
+  height: 25px;
+  margin: 20px auto 20px;
+  padding: 0;
+  background: #8a9b0f;
+  border-bottom: 5px solid #535d09;
+  border-radius: 3px 3px 0 0;
+  font-size: 20px;
+}
+
+.menu li:hover > a{
+  background: #6e7c0c;
+  color: #eff7b1;
+}
+
+.menu > :hover > a{
+  border-radius: 3px 3px 0 0;
+}
+
+#acMenu dt{
+    display:block;
+    width:200px;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    border:#666 1px solid;
+    cursor:pointer;
+    }
+#acMenu dd{
+    background:#f2f2f2;
+    width:200px;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    border:#666 1px solid;
+    display: none;
+    }
+
+.review {
+  font-size: 20px;
+}

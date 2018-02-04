@@ -1,0 +1,51 @@
+
+<div class="shop-index-container">
+      <% @shops.each do |shop| %>
+    <div class="shop">
+    <div class="shop-img">
+      <%= image_tag shop.image.url, class: 'shop-phot' %>
+    </div>
+    <div class="card">
+       <h1 class="card-title"><%= shop.name %></h1>
+       <p class="card-text"><%= shop.description %></p>
+       <dl id="acMenu">
+          <dt>メニュー</dt>
+              <% shop.menu.each do |menu| %>
+                <dd><%= menu.name %></dd>
+              <% end %>
+      </dl>
+       <div class="review">
+              <%shop.review.each do |review| %>
+                <%= review.content %></br>
+
+              <% end %>
+      </div>
+
+
+
+
+
+
+        <div class="card-link">
+          <%= link_to  new_menu_path(shop_id: shop.id) do %>
+            <%= image_tag 'o.png', class: 'topic-index-icon' %>
+          <% end %>
+          <%= link_to new_review_path(shop_id: shop.id) do %>
+            <%= image_tag 'i.png', class: 'topic-index-icon' %>
+          <% end %>
+        </div>
+
+    </div>
+
+  </div>
+    <% end %>
+
+</div>
+
+<script>
+    $(function(){
+        $("#acMenu dt").on("click", function() {
+            $("dd").slideToggle();
+        });
+    });
+</script>
